@@ -1,0 +1,71 @@
+<!DOCTYPE Html>
+<html lang="fr">
+<head>
+  <title> Fondation St Luc - </title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+flutte
+    </nav>
+    <header>
+
+        <div class="slideshow-container">
+
+            <div class="slide">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/slide/01.png" style="width:50%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            
+            <div class="slide">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/slide/02.png" style="width:50%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="slide">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/slide/03.png" style="width:50%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // change l'image toute les 5 secondes
+            }
+            </script>
+
+    </header>
+<article>
+    <h1></h1>
+</article>
+
+
+</body>
